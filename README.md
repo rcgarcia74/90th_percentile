@@ -84,7 +84,7 @@ Run the code below, which has the complete code, that will generate the csv file
 ```bash
 python3 90th_percentile_nyc_trips.py
 ```
-This will generate the csv file in the current directory. To verify if the quantile captured the top 10%, the top trips should only show 372,334 which is 9.99% of the total population of the parquet file. To do this, you can install the PyPI version of the parquet-tools to inspect the metadata of the parquet file which shows the total record count.
+This will generate the csv file in the current directory. To verify if the quantile captured the top 10%, the top trips should only show 372,333 which is 9.99% of the total population of the parquet file. To do this, you can install the PyPI version of the parquet-tools to inspect the metadata of the parquet file which shows the total record count.
 
 ```bash
 pip3 install parquet-tools
@@ -138,4 +138,4 @@ total_amount
 congestion_surcharge
 ```
 
-Trips above 90th Percentile = (372,334 / 3,724,889) * 100 = 9.99%. 
+Trips above 90th Percentile = (372,333 / 3,724,889) * 100 = 9.99%. 
